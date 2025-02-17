@@ -1,18 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Digital Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3 {
+            color: #3498db;
+        }
+
+        .experience-item .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: #f0f3f6;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Hello World</h1>
-    <h2>This a level header</h2>
-    <h3>This a level 3</h3>
-    <p>This is a paragraph</p>
-</body>
+    <div class="section">
+        <h1>John Doe</h1>
+        <h2>Executive Summary</h2>
+        <p>Results-driven professional with over 5 years of experience in web development and project management. Proven track record of delivering high-quality solutions while leading cross-functional teams to success.</p>
+    </div>
 
+    <div class="section">
+        <h2>About</h2>
+        <p>Passionate technologist and problem solver with a keen interest in creating efficient and scalable solutions. Committed to continuous learning and staying current with industry trends and best practices.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <div class="experience-item">
+            <h3>Senior Web Developer</h3>
+            <div class="date">2020 - Present</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+
+        <div class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <div class="date">2018 - 2020</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+
+        <div class="experience-item">
+            <h3>Junior Developer</h3>
+            <div class="date">2016 - 2018</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="experience-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <div class="date">2012 - 2016</div>
+            <p>University of Technology</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Agile</div>
+        </div>
+    </div>
+</body>
 </html>
